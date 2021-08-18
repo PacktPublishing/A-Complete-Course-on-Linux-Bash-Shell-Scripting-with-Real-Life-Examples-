@@ -1,0 +1,96 @@
+Section 6 - Homework
+====================================
+
+Write a script to check if directory exist
+
+
+#!/bin/bash
+directory="./Test"
+
+# bash check if directory exists
+if [ -d $directory ]; then
+	echo "Directory exists"
+else 
+	echo "Directory does not exists"
+fi
+
+---------------------------------------------------------
+
+
+List Files and Directories with Description
+
+
+If you want to list the files in /home directory, you can use the for loop like this:
+
+
+
+#!/bin/bash
+
+
+for obj in /home/yourname/*
+
+
+do
+	
+if [ -d $obj ]
+
+
+	then
+
+	echo $obj is a folder
+
+
+	elif [ -f "$obj" ]
+
+
+	then
+
+ echo $obj is a file
+
+
+	fi
+
+
+done
+
+---------------------------------------------------------
+
+
+
+
+Create infinite loop
+
+
+
+#!/bin/bash
+
+
+while true
+
+
+do
+
+
+echo This is infinite loop
+
+
+done
+
+
+---------------------------------------------------------
+
+
+
+
+Create a script for car inventory
+
+
+Add a new car
+It should ask user to add serial #, make, model, year and color of the car
+
+
+
+Delete a car
+It should delete a car by serial #
+
+Combine above tasks into one script using case statement

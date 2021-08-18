@@ -1,0 +1,42 @@
+Return Successful Exist Status
+
+ls -l 
+echo $?
+
+pwd
+echo $?
+
+pwdd
+echo ?
+
+
+
+#!/bin/bash
+
+echo hello
+echo $?
+
+
+
+Return Un-Successful Exist Status
+
+#!/bin/bash
+
+echi hello
+echo $?
+
+
+
+
+Return exist status if file exist
+
+#!/bin/bash
+
+ls -l /home/iafzal/check
+
+if [ $? -eq 0 ]
+then
+echo File exist
+else
+echo File does not exist
+fi

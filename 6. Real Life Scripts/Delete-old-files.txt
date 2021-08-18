@@ -1,0 +1,19 @@
+Create files with older timestamp
+
+
+touch -d "Thu, 1 March 2018 12:30:00" a
+
+
+
+
+Find and delete files older than 90 days
+
+
+find /path-to-dir -mtime +90 -exec ls -l {} \;
+
+
+
+
+Find and rename old files
+
+find . -mtime +90 -exec mv {} {}.old \;
